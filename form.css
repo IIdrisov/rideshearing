@@ -1,0 +1,58 @@
+.form-wrapper{
+    margin-top: 20px;
+    background: #11253D;
+    border-radius: 30px;
+    padding: 30px 38px;
+}
+.form-cta{
+    margin-bottom: 20px;
+    color: #fff;
+}
+.lead-form-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    outline: none;
+    width: 100%;
+}
+input:not(:last-child){
+    margin-bottom: 30px;
+}
+input{
+    border: none;
+    width: 100%;
+    height: 30px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    outline: 0;
+    color: rgba(0, 0, 0, 1);;
+}
+textarea{
+    outline: none;
+    resize: none;
+    width: 100%;
+    border-radius: 30px;
+    padding: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+.form-send button{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px 50px;
+    border-radius: 50px;
+    background-color: #fff;
+    outline: 0;
+    color: #000;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+

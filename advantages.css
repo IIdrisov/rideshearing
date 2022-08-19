@@ -1,0 +1,91 @@
+.advantages-icon-item{
+    width: 128px;
+    height: 128px;
+}
+.advantages-icon{
+    margin-bottom: 20px;
+}
+.advantages-item-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    /* border: 1px solid #5200FF; */
+    border-radius: 30px;
+    padding: 20px 41px;
+}
+.advatnages-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #5200FF;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+.advantages-title{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+
+@media screen and (min-width: 767px) {
+    .advatnages-wrapper{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        margin-top: 0px;
+    }
+    .advantages-icon-item {
+        width: 64px;
+        height: 64px;
+    }
+    .advantages-title{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .advantages-item-wrapper{
+        padding: 20px 20px;
+        width: 200px;
+        border: 2px solid #5200FF;
+    }
+    
+} 
+
+
+@media screen and (min-width: 1023px){
+    
+    .advantages-icon-item {
+        width: 128px;
+        height: 128px;
+    }
+    .advantages-title{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .advantages-item-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+        border: 3px solid #5200FF;
+        border-radius: 30px;
+        padding: 20px 41px;
+    }
+    .advatnages-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 0px;
+    }
+} 

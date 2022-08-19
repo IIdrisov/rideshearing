@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta mane="description" content="Приложение для поиска попутчиков в Москве">
+        <meta name="keywords" content="попутка, подкинуть, совместная поездка">
+        <title>Ridesharing</title>
+        <script src="js/header.js"></script>
+        <!-- <script src="app.js"></script> -->
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/mainblock.css">
+        <link rel="stylesheet" href="css/discription.css">
+        <link rel="stylesheet" href="css/advantages.css">
+        <link rel="stylesheet" href="css/cta.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/form.css">
+    
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('UmfpLoc9RtG6Y1Fc-');
+        })();
+    </script>
+    </head>
+
+    <body>
+        <header>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+            <a href="#" class="active">Ridesharing</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="#">Приложение</a>
+                <a href="#">О сервисе</a>
+                <a href="#">Контакты</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            </div>
+        </header>
+        <header class="header-desctop">
+            <div class="header-wrapper">
+                <a href="#" class="active">Ridesharing</a>
+                <div class="nav">
+                    <a href="#" class="nav-link"><div class="tilte-nav">О сервисе</div></a>
+                    <a href="#" class="nav-link"><div class="tilte-nav">Контакты</div></a>
+                    <a href="#" class="nav-link"><div class="tilte-nav bg-blue">Приложение</div></a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="hero-main-wrapper">
+                <div class="title-buttons-wrapper">
+                    <div class="main-title">Сервис поиска попутчиков в Москве и Московской области</div>
+                <div class="hero-buttons-wrapper">
+                    <a href="#" class="button-link"><div class="buttons-wrapper">
+                        <img src="images/appstore.png" alt="alt">
+                        <div class="button-title">Для IPhone</div>
+                    </div></a>
+                    <a href="#" class="button-link"><div class="buttons-wrapper">
+                        <img src="images/googleplay.png" alt="alt">
+                        <div class="button-title">Для Android</div>
+                    </div></a>
+                </div>
+                </div>
+                <img src="images/Ride-Amigos-02.png" alt="alt" class="main-image">
+            </div>
+
+            <div class="discription-wrapper">
+                <div class="discription-title">Что такое райдшеринг?</div>
+                <div class="discription-item">Это способ передвижения по городу путем разделения поездки между людьми</div>
+                <div class="discription-item">Вы можете в пару кликов найти человека, который подбросит вас до метро, дома или работы</div>
+                <div class="discription-item">А водители могут экономить до 90% на топливе!</div>
+            </div>
+
+            <div class="advatnages-wrapper">
+                <div class="advantages-item-wrapper">
+                    <div class="advantages-icon">
+                        <img src="images/bar.png" alt="alt" class="advantages-icon-item">
+                    </div>
+                    <div class="advantages-title">Дешевле, чем поездка на такси, а время поиска авто одинаковое</div>
+                </div>
+
+                <div class="advantages-item-wrapper">
+                    <div class="advantages-icon">
+                        <img src="images/image.png" alt="alt" class="advantages-icon-item">
+                    </div>
+                    <div class="advantages-title">Поездка быстрее, чем на общественном транспорте</div>
+                </div>
+
+                <div class="advantages-item-wrapper">
+                    <div class="advantages-icon">
+                        <img src="images/tick.png" alt="alt" class="advantages-icon-item">
+                    </div>
+                    <div class="advantages-title">Верификация водителей! Все поездки безопасны!</div>
+                </div>
+            </div>
+
+            <div class="cta-wrapper">
+                <div class="cta-main-title">Как начать пользоваться сервисом?</div>
+                <div class="cta">Скачивайте приложение и начинайте передвигаться быстрее и дешевле!</div>
+
+                <div class="hero-buttons-wrapper buttons-desktop">
+                    <a href="#" class="button-link"><div class="buttons-wrapper">
+                        <img src="images/appstore.png" alt="alt">
+                        <div class="button-title">Для IPhone</div>
+                    </div></a>
+                    <a href="#" class="button-link"><div class="buttons-wrapper">
+                        <img src="images/googleplay.png" alt="alt">
+                        <div class="button-title">Для Android</div>
+                    </div></a>
+                </div>
+            </div>
+
+            <div class="form-wrapper">
+                <form  method="post">
+                    <div class="cta-main-title form-cta">Есть вопрос или идея?</div>
+                    <div class="cta form-cta">Напишите нам!</div>
+                    <div class="lead-form-wrapper">
+                        <input type="text" id="txt_name" name="name" placeholder="Имя" required>
+                        <input type="email" id="email" name="email" placeholder="Адрес электронной почты" required>
+                        <textarea name="message" id="message" name="message" placeholder="Соощение" cols="30" rows="5" required></textarea>
+                        <br>
+                        <button class="form-send" id="button" type="button" onclick="myClick()">ОТПРАВИТЬ</button>
+                    </div>
+                </form>
+            </div>
+            
+
+
+        </main>
+        <footer>
+            <div class="links-wrapper">
+                <div class="link"><a href="#">Приложение</a></div>
+                <div class="link"><a href="#">О сервисе</a></div>
+                <div class="link"><a href="#">Контакты</a></div>
+                
+            </div>
+            <div class="policy">@ridesharing2022</div>
+            <div class="created-by">Created by Ivan Idrisov, Artem Kravtsov, Yuri Golinkovsky</div>
+        </footer>
+
+
+       
+    </body>
